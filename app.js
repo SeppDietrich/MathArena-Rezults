@@ -153,7 +153,7 @@ function displayParticipants() {
                         </div>
                         <div class="text-end">
                             <span class="badge bg-primary points-badge">
-                                ${participant.puncte || 0} puncte
+                                ${participant.puncte > 30 ? 30 : (participant.puncte || 0)} puncte
                             </span>
                         </div>
                     </div>
@@ -177,11 +177,7 @@ function displayParticipants() {
                             </p>
                         ` : ''}
                         
-                        ${participant.timestamp ? `
-                            <p class="card-text mb-3">
-                                <i class="bi bi-clock"></i> ${participant.timestamp.toLocaleDateString('ro-RO')}
-                            </p>
-                        ` : ''}
+                        
                     </div>
                     
                     ${participant.link ? `
