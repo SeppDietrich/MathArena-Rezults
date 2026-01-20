@@ -1,22 +1,12 @@
-// Replace with your Firebase project configuration
+// Use environment variables or fallback
 const firebaseConfig = {
-
-  apiKey: "AIzaSyAgotVJxT1tGfojqJh9A3JLxG2QdxMie5w",
-
-  authDomain: "matharena-f2c5b.firebaseapp.com",
-
-  projectId: "matharena-f2c5b",
-
-  storageBucket: "matharena-f2c5b.firebasestorage.app",
-
-  messagingSenderId: "1087998817293",
-
-  appId: "1:1087998817293:web:63292448ccb79935a81144",
-
-  
-
+  apiKey: process.env.VUE_APP_FIREBASE_API_KEY,
+  authDomain: process.env.VUE_APP_FIREBASE_AUTH_DOMAIN ,
+  projectId: process.env.VUE_APP_FIREBASE_PROJECT_ID ,
+  storageBucket: process.env.VUE_APP_FIREBASE_STORAGE_BUCKET ,
+  messagingSenderId: process.env.VUE_APP_FIREBASE_MESSAGING_SENDER_ID ,
+  appId: process.env.VUE_APP_FIREBASE_APP_ID 
 };
-
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
