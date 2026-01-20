@@ -1,0 +1,15 @@
+{
+  "name": "matharena-2025",
+  "version": "1.0.0",
+  "description": "MathArena 2025 Participants",
+  "scripts": {
+    "dev": "serve .",
+    "start": "serve ."
+  },
+  "dependencies": {
+    "serve": "^14.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
